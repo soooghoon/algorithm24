@@ -1,3 +1,3 @@
-#visual code test 연동 
+#visual code test 
 print("visual code")
 print("202111417 조성훈")
