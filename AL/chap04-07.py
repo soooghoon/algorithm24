@@ -15,7 +15,7 @@ def topological_sort_dfs(graph):
     return stack[::-1]
 
 
-mygraph = {
+graph = {
     'A': ['D', 'E', 'B'],
     'B': ['E', 'F', 'C'],
     'C': ['G'],
@@ -25,5 +25,5 @@ mygraph = {
     'G': ['H'],
     'H': []
 }
-topological_order_dfs = topological_sort_dfs(mygraph)
+topological_order_dfs = topological_sort_dfs(graph)
 print('DFS Topological Sort:', ' '.join(topological_order_dfs)) 
