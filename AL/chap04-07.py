@@ -16,14 +16,14 @@ def topological_sort_dfs(graph):
 
 
 mygraph = {
-    'A': {'B', 'D'},
-    'B': {'C', 'E'},
-    'C': {'F', 'G'},
-    'D': {'E'},
-    'E': {'F'},
-    'F': {'G'},
-    'G': ()
+    'A': ['D', 'E', 'B'],
+    'B': ['E', 'F', 'C'],
+    'C': ['G'],
+    'D': ['E'],
+    'E': [],
+    'F': ['G'],
+    'G': ['H'],
+    'H': []
 }
-
 topological_order_dfs = topological_sort_dfs(mygraph)
 print('DFS Topological Sort:', ' '.join(topological_order_dfs)) 
